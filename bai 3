@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int ucnn(int n, int m) {
+    while (n != m) {
+        if (n > m)
+            n = n - m;
+        else
+            m = m - n;
+    }
+    return n;
+}
+int main() {
+    int m, n;
+    cin >> m >> n;
+    cout << ucnn(m, n);
+}
